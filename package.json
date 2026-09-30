@@ -1,0 +1,1 @@
+{"name":"condition-cockpit","version":"1.0.0","private":true,"type":"module","scripts":{"start":"vite --host 127.0.0.1","build":"tsc --noEmit && vite build","test":"tsx --test tests/*.test.ts"},"devDependencies":{"typescript":"~5.9.3","vite":"^7.1.0","tsx":"^4.20.0","@types/node":"^22.0.0"}}
