@@ -28,3 +28,6 @@ PB00/ZFR1 rules derive from central condition configuration, with additional rep
 Saves persist in browser localStorage per display article. Drafts are isolated until Save. Filters use OR within each field and AND across fields. Free-entered Vendor IDs require 10 characters; Article/A-ID require 18. No identifier is converted to a number. All reference value helps allow search, multi-selection, Apply and Cancel.
 
 Prototype limitations: single-browser storage, no concurrent editing/conflict handling, no OData integration, and no automatic propagation of parent monetary changes to component values. Copy preserves component-specific values/quantities while applying the dialog's type, dates, currency, unit and description; its Value/Quantity fields adjust the parent. Fictional validity defaults use the 2026 calendar year. No reference screenshots were supplied.
+
+The demonstration UI uses English, including OpenUI5 calendars and standard dialogs regardless of browser language. Known legacy German demo product descriptions are translated for display without changing saved condition records.
+
