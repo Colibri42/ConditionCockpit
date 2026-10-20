@@ -4,5 +4,6 @@ export interface ConditionRow { article:string; text:string; from:string; to:str
 export interface Condition { id:string; type:string; rows:ConditionRow[] }
 export type FilterKey = 'vendor'|'orgs'|'pir'|'article'|'aid'|'contract';
 export type Filters = Record<FilterKey,string[]>;
-export interface PurchasingOrganisation {code:string;description:string;minimumQuantity:number;unit:string}
+export interface PurchasingOrganisation {code:string;description:string;minimumQuantity:number;remainingShelfLife:number;plannedDeliveryTime:number;unit:string}
 export interface Repository { articles(filters:Filters):Promise<Article[]>; values(key:FilterKey):Promise<{key:string;text:string}[]>; purchasingOrganisations(id:string):Promise<PurchasingOrganisation[]>; conditions(id:string):Promise<Condition[]>; save(id:string,conditions:Condition[]):Promise<void> }
+
